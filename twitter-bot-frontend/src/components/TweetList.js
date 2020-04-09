@@ -1,21 +1,21 @@
-// import React, { Component } from 'react'
-// import TweetItem  from './TweetItem';
-// import faketweets  from '../data';
+import React, { Component } from 'react'
+import TweetItem  from './TweetItem';
+import faketweets  from '../data';
 
-// export default class TweetList extends Component {   
-//     // states = { data: [] }
-//     render() {
-//     const tweets = faketweets
-//     const data = tweets.map(tweet => {
-//         console.log(tweets)
-//         return (<TweetItem key={tweet.tweet} tweet={tweet}/>)
+export default class TweetList extends Component {   
+    // states = { data: [] }
+    render() {
+    const tweets = faketweets
+    const data = tweets.map(tweet => {
+        console.log(tweets)
+        return (<TweetItem key={tweet.tweet} tweet={tweet}/>)
 
-//     })
-//     return (
-//         <div>
+    })
+    return (
+        <div>
 
-//             <ul className='tweets'>{data}</ul>
-//         </div>
-//     )
-//     }
-// }
+            <ul className='tweets'>{data}</ul>
+        </div>
+    )
+    }
+}
