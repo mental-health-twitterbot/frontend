@@ -1,18 +1,33 @@
 button{
-    position: relative;
-    left: 50%;
-    bottom:90px;
-    width: 90px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 10%;
-   background-color: #10d0ff;
-   color: whitesmoke;
+  position: relative;
+  left: 60%;
+  top: 200px;
+  height: 50px;
+  width: 90px;
+  font-size: 20px;
+  background-color: #10d0ff;
 }
-.tweets {
-    color: white;
-    position: relative;
-    left: 23%;
-    top: 70px;
-    font-size: 20px;
-  }
+p{
+  color: white;
+  position: relative;
+  left: 50%;
+  font-size: 30px;
+  top: 280px;
+}
+h3{
+  color: white;
+  position: relative;
+  left: 20%;
+}
+.vertical {
+  border-left: 1px solid grey;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+}
+hr{
+  border-bottom-color: grey;
+
+
+}
