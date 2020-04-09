@@ -45,7 +45,11 @@
     color: white;
     list-style: none;
   }
-  li{
+  .img{
     margin-bottom: 30px;
     font-size: 25px;
   }
+  .img:hover{
+  color: #10d0ff;
+  cursor: pointer;
+}

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import TweetItem  from './TweetItem';
 import faketweets  from '../data';
+import './TweetList.css';
 
 export default class TweetList extends Component {   
-    // states = { data: [] }
+    states = { data: [] }
     render() {
     const tweets = faketweets
     const data = tweets.map(tweet => {
@@ -15,6 +16,7 @@ export default class TweetList extends Component {
         <div>
 
             <ul className='tweets'>{data}</ul>
+        <button>Tweet</button>
         </div>
     )
     }

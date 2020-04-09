@@ -43,31 +43,37 @@ class App extends React.Component {
  
   render() {
     return (
-      <Sidebar
-        sidebar={
-        <div className='sidebar'>
-
-          <img className='main-logo' src={myLogo} alt=''/>
-          <ul> 
-            <li> <img className='home' src={homelogo} alt=''/> Home</li>
-        <li> <img className='explore' src={explorelogo} alt=''/> Explore</li>
-            <li> <img className='bell' src={bell} alt=''/> Notifications</li>
-            <li> <img className='mail' src={mail} alt=''/> Messages</li>
-            <li> <img className='mark' src={mark} alt=''/> Booksmarks</li>
-            <li> <img className='list' src={lists} alt=''/> Lists</li>
-            <li> <img className='profile' src={profile} alt=''/> Profile</li>
-            <li> <img className='more' src={more} alt=''/> More</li>
-          </ul>
-        </div>
         
-        }
-        open={this.state.sidebarOpen}
-        docked={this.state.sidebarDocked}
-        onSetOpen={this.onSetSidebarOpen}
-      >
-      </Sidebar>
+
+
+    <Sidebar
+      sidebar={
+      <div>
+
+        <img className='main-logo' src={myLogo} alt=''/>
+        <ul> 
+          <li className='img'> <img className='home' src={homelogo} alt=''/> Home</li>
+          <li className='img'> <img className='explore' src={explorelogo} alt=''/> Explore</li>
+          <li className='img'> <img className='bell' src={bell} alt=''/> Notifications</li>
+          <li className='img'> <img className='mail' src={mail} alt=''/> Messages</li>
+          <li className='img'> <img className='mark' src={mark} alt=''/> Booksmarks</li>
+          <li className='img'> <img className='list' src={lists} alt=''/> Lists</li>
+          <li className='img'> <img className='profile' src={profile} alt=''/> Profile</li>
+          <li className='img'> <img className='more' src={more} alt=''/> More</li>
+        </ul>
+      </div>
+      
+      }
+      open={this.state.sidebarOpen}
+      docked={this.state.sidebarDocked}
+      onSetOpen={this.onSetSidebarOpen}
+    >
+    </Sidebar>
+     
+
     );
   }
 }
+
  
 export default App;
