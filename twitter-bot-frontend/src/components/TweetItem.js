@@ -1,15 +1,15 @@
-// import React, { Component } from 'react'
+import React, { Component } from 'react'
 
-// export default class TweetItem extends Component {
+export default class TweetItem extends Component {
    
-//     render() {
-//        const tweets = this.props.tweet
-//         return (
-//          <div className='TheTweet'>
+    render() {
+       const tweets = this.props.tweet
+        return (
+         <div className='TheTweet'>
             
-//         <li className='tweets' key={tweets._id}>{tweets.tweet}</li>
+        <li className='tweets' key={tweets._id}>{tweets.tweet}</li>
              
-//          </div>
-//         )
-//     }
-// }
+         </div>
+        )
+    }
+}
