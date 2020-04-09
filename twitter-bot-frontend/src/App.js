@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import Sidebar from '../src/components/Sidebar'
-// import TweetList from './components/TweetList';
+import TweetList from './components/TweetList';
 
 
 export default class App extends Component {
@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
             <div>
               <Sidebar/>
-              {/* <TweetList/> */}
+              <TweetList/>
             </div>
     )
   }
