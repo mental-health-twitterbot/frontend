@@ -1,0 +1,26 @@
+.tweets{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.22em;
+}
+
+.tweetBox{
+  margin-left: 8em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  justify-content: center;
+  max-width: 80%;
+  border: solid .5px grey;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 1em;
+
+}
+.linkBar{
+  width: 633px;
+  margin-bottom: 0px;
+}
+
+a{
+  color: rgb(40, 172, 233);
+  margin-left: .2em;
+}

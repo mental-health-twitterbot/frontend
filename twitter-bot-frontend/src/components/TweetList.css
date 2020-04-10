@@ -1,0 +1,49 @@
+button.getTweet{
+  position: fixed;
+  left: 2%;
+  top: 60%;
+  height: 40px;
+  width: 110px;
+  font-size: 20px;
+  background-color: #1DA1F3;
+  color: white;
+  border-radius: 33%;
+}
+button.getTweet:hover{
+  cursor: pointer;
+  position: fixed;
+  left: 2%;
+  top: 60%;
+  height: 40px;
+  width: 110px;
+  font-size: 20px;
+  background-color: rgb(24, 131, 197);
+  color: white;
+  border-radius: 33%;
+}
+p{
+  color: white;
+  position: relative;
+  left: 40%;
+  font-size: 30px;
+  top: 280px;
+}
+h3{
+  color: white;
+  position: relative;
+  left: 20%;
+}
+/* .vertical {
+  border-left: 1px solid grey;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  margin-left: -3px;
+}
+.vertical2 {
+  border-left: 1px solid grey;
+  height: 100%;
+  position: absolute;
+  left: 60%;
+  margin-left: -3px;
+} */
