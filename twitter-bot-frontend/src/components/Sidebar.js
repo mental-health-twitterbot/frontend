@@ -4,7 +4,7 @@ import './Toolbar.css';
 import myLogo from '../assets/twitter.png'; 
 import homelogo from '../assets/home.png';
 import lists from '../assets/list.png';
-
+import { Link, Router } from 'react-router-dom';
 import profile from '../assets/profile.png';
 
 
@@ -46,11 +46,14 @@ class App extends React.Component {
     <Sidebar
       sidebar={
       <div>
+        
         <img className='main-logo' src={myLogo} alt=''/>
         <ul> 
-          <li className='img'> <img className='home' src={homelogo} alt=''/> Home </li>
-          <li className='img'> <img className='list' src={lists} alt=''/> Lists </li>
-          <li className='img'> <img className='profile' src={profile} alt=''/> Profile</li>
+        
+          <li className='img'> <img className='home' src={homelogo} alt=''/> <Link className='home'  to='/'>Home</Link></li>
+          {/* <li className='img'> <img className='list' src={lists} alt=''/> Lists </li> */}
+          <li className='img'> <img className='profile' src={profile} alt=''/> <Link className='about-us'  to='/about-us'>Profile</Link></li>
+        {/* <Link className='about-us'  to='/about-us'></Link> */}
         
         </ul>
       </div>
