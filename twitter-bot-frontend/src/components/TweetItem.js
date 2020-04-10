@@ -5,7 +5,6 @@ export default class TweetItem extends Component {
     render() {
        const { approvedTweet } = this.props;
         const tweetArray = approvedTweet.split("#");
-
        
         return (
          <div className='tweetBox'>
@@ -19,13 +18,19 @@ export default class TweetItem extends Component {
                         />
                     </div>
                     <div id="tweetBody">
-                        { tweetArray[0]} 
-                        <a href="">
-                            #{tweetArray[1]}
-                        </a>
-                        <a href ="">
-                            { tweetArray[2] ? '#' + tweetArray[2] : ''}
-                        </a>
+                        <div>
+                            <h6>@letsTalkAboutIt</h6>
+                            {/* <span>{ new Date().toISOString() }</span> */}
+                        </div>
+                        <div>
+                            { tweetArray[0]} 
+                            <a href="">
+                                #{tweetArray[1]}
+                            </a>
+                            <a href ="">
+                                { tweetArray[2] ? '#' + tweetArray[2] : ''}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </li>
