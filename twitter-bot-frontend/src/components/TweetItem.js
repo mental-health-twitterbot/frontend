@@ -8,7 +8,7 @@ export default class TweetItem extends Component {
         return (
          <div className='TheTweet'>
             
-        <li className='tweets'></li>
+            <li className='tweets'> { approvedTweet }</li>
              
          </div>
         )

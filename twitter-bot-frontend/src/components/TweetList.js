@@ -5,38 +5,31 @@ import { getData } from '../services/backendData.js';
 
 export default class TweetList extends Component {  
 
-    state = { approvedTweet: [] }
-
-    async componentDidMount() {
-        const data = await getData();
- 
-        if (data.body) {
-         this.setState({ approvedTweet: data.body })
-        }
- 
+    state = { 
+        approvedTweet: [] 
     }
+
+    handleClick = async(e) => {
+        e.preventDefault();
+
+        const data = await getData();
+
+        this.setState({ approvedTweet: [...this.state.approvedTweet, data.body.tweet_text] })
+        console.log(data.body);
+        
+    }
+
     render() {
-    // const tweets = faketweets
-    const { approvedTweet } = this.state;
-
-
-    // const handleClick = () => {
-
-    //     this.setState({data: [faketweets[Math.floor(Math.random() * 5)], ...this.state.data]})
-    //     this.setState({approvedTweets: this.state.approvedTweets})
-
-    // }
-    // const elementArray = this.state.approvedTweets.map(tweetObj => {
-    //     return <TweetItem tweet={ tweetObj}/>
-    // } )
+    console.log(this.state.approvedTweet);
 
     return (
         <div>
-            <button>Tweet</button>
-            {/* <p className='tweets'>{elementArray}</p> */}
-        <ul>
-            <TweetItem approvedTweet={ approvedTweet } />
-        </ul>
+            <button onClick={this.handleClick}>Tweet</button>
+            <ul>
+                { this.state.approvedTweet.map(tweet => {
+                   return <TweetItem approvedTweet={tweet}/>
+                })};
+            </ul>
         </div>
         )
     }
