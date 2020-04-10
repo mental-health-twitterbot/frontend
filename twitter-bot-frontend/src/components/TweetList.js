@@ -22,7 +22,7 @@ export default class TweetList extends Component {
 
         const data = await getData();
 
-        this.setState({ approvedTweet: data.body.tweet_text })
+        this.setState({ approvedTweet: [...this.state.approvedTweet, data.body.tweet_text] })
         console.log(data.body);
         
     }
