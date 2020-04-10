@@ -7,25 +7,26 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Profile from './components/Profile';
+
+// import Profile from './components/Profile';
 
 
 export default class App extends Component {
   
-  // state = {fakeTweets: []}
+
 
   render() {
-    // const { fakeTweets } = this.state;
+    
     return (
             <div>
               <Sidebar/>
-<Router>
+              <Router>
 
               <Switch>
-                <Route exact path='/about/us' component={Profile}/>
-              <Route exact path='/' component={TweetList}/>
+                 {/* <Route exact path='/about/us' component={Profile}/> */}
+                 <Route exact path='/' component={TweetList}/>
               </Switch>
-</Router>
+              </Router>
             </div>
     )
   }
