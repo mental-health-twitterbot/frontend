@@ -8,7 +8,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-// import Profile from './components/Profile';
+import Profile from './components/Profile.js';
 
 
 export default class App extends Component {
@@ -19,11 +19,11 @@ export default class App extends Component {
     
     return (
             <div>
-              <Sidebar/>
               <Router>
+              <Sidebar/>
 
               <Switch>
-                 {/* <Route exact path='/about/us' component={Profile}/> */}
+                 <Route exact path='/about-us' component={Profile}/>
                  <Route exact path='/' component={TweetList}/>
               </Switch>
               </Router>

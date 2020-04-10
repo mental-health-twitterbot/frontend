@@ -7,7 +7,7 @@ button.getTweet{
   font-size: 20px;
   background-color: #1DA1F3;
   color: white;
-  border-radius: 33%;
+  z-index: 1000;
 }
 button.getTweet:hover{
   cursor: pointer;
@@ -19,8 +19,14 @@ button.getTweet:hover{
   font-size: 20px;
   background-color: rgb(24, 131, 197);
   color: white;
-  border-radius: 33%;
+  z-index: 1000;
 }
+#tweet{
+  width: 7em;
+  margin-left: 0px;
+
+}
+
 p{
   color: white;
   position: relative;

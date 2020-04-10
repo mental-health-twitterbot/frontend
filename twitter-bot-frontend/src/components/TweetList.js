@@ -11,9 +11,11 @@ export default class TweetList extends Component {
 
     handleClick = async(e) => {
         e.preventDefault();
-        //spread the current approved tweets and then add the current fetched tweet
+    
         const data = await getData()
-        this.setState({ approvedTweet: [...this.state.approvedTweet, data.body.tweet_text] })
+        this.setState({ 
+            approvedTweet: [...this.state.approvedTweet, data.body.tweet_text] 
+        })
         console.log(data.body);
         
     }
@@ -26,8 +28,9 @@ export default class TweetList extends Component {
             <button 
                 className="getTweet" 
                 onClick={this.handleClick}
-            > Tweet
+            >Tweet
             </button>
+           
             <ul>
                 { this.state.approvedTweet
                     .map(tweet => {return <TweetItem approvedTweet={tweet}/>
