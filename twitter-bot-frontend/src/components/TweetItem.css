@@ -5,5 +5,11 @@
   justify-content: center;
   max-width: 80%;
   border: solid .5px grey;
-  padding: .75em;
+  padding-left: 1em;
+  padding-top: 1em;
+
+}
+.linkBar{
+  width: 633px;
+  margin-bottom: 0px;
 }

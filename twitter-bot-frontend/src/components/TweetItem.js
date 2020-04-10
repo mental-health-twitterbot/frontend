@@ -8,7 +8,7 @@ export default class TweetItem extends Component {
         return (
          <div className='tweetBox'>
             <li className='tweets'> { approvedTweet }</li>
-           <span>Like</span><span>comment</span>
+            <img className='linkBar' src="tweetbar.png"/>
          </div>
         )
     }

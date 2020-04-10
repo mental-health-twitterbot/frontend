@@ -24,7 +24,7 @@ export default class TweetList extends Component {
     return (
         <div>
             <button 
-                class='getTweet' 
+                className="getTweet" 
                 onClick={this.handleClick}
             > Tweet
             </button>
@@ -32,7 +32,6 @@ export default class TweetList extends Component {
                 { this.state.approvedTweet
                     .map(tweet => {return <TweetItem approvedTweet={tweet}/>
                 })}
-                <img src=''></img>
             </ul>
         </div>
         )
