@@ -53,6 +53,7 @@ class App extends React.Component {
           <li className='img'> <img className='profile' src={profile} alt=''/> Profile</li>
         
         </ul>
+        <img className='tweetIcon' src='tweet.png'/>
       </div>
       
       }
