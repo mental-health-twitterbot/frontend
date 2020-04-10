@@ -1,25 +1,26 @@
 import React, { Component } from 'react'
-// import TweetItem  from './TweetItem';
+import TweetItem  from './TweetItem';
 import faketweets  from '../data';
 import './TweetList.css';
 
 export default class TweetList extends Component {   
-    state = { data: '' }
+    state = { data: [] }
     render() {
     // const tweets = faketweets
      
     const handleClick = () => {
-        this.setState({data:  faketweets[Math.floor(Math.random() * 5)]})
+
+        this.setState({data: [faketweets[Math.floor(Math.random() * 5)], ...this.state.data]})
     }
+    const elementArray = this.state.data.map(tweetObj => {
+        return <TweetItem tweet={ tweetObj}/>
+    } )
     return (
         <div>
-            <div class= "vertical"></div> 
-            <hr></hr>
-        <h3> Home </h3>
+            <button onClick={handleClick}>Tweet</button>
+            <p className='tweets'>{elementArray}</p>
 
-            <p className='tweets'>{this.state.data.tweet}</p>
-        <button onClick={handleClick}>Tweet</button>
         </div>
-    )
+        )
     }
 }

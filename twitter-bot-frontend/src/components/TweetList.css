@@ -1,6 +1,6 @@
 button{
   position: relative;
-  left: 60%;
+  left: 30%;
   top: 200px;
   height: 50px;
   width: 90px;
@@ -10,7 +10,7 @@ button{
 p{
   color: white;
   position: relative;
-  left: 50%;
+  left: 40%;
   font-size: 30px;
   top: 280px;
 }
@@ -26,8 +26,10 @@ h3{
   left: 20%;
   margin-left: -3px;
 }
-hr{
-  border-bottom-color: grey;
-
-
+.vertical2 {
+  border-left: 1px solid grey;
+  height: 100%;
+  position: absolute;
+  left: 60%;
+  margin-left: -3px;
 }
