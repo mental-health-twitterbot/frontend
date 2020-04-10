@@ -19,7 +19,7 @@ export default class Profile extends Component {
                     <img className='profile-img' src={dakotaImg} alt=''/>
                     <h1> Dakota Druley</h1>
                     <p className='title'>Software Developer</p>
-                    <p className='about'> SOmething </p>
+                   
                    
                 </div>
                 <div className='card'>
@@ -27,7 +27,7 @@ export default class Profile extends Component {
                     <img className='profile-img' src={suriImg} alt=''/>
                     <h1> Surelis Segarra</h1>
                     <p className='title'>Software Developer</p>
-                    <p className='about'> Something... </p>
+                  
                    
                 </div> 
                  <div className='card'>
@@ -35,7 +35,7 @@ export default class Profile extends Component {
                     <img className='profile-img' src={janeImg} alt=''/>
                     <h1> Janelle  </h1>
                     <p className='title'>Software Developer</p>
-                    <p className='about'>Something... </p>
+                  
                    
                 </div>
                 <div className='card'>
@@ -43,7 +43,7 @@ export default class Profile extends Component {
                     <img className='profile-img' src={joshImg} alt=''/>
                     <h1> Josh Ford</h1>
                     <p className='title'>Software Developer</p>
-                    <p className='about'> Something... </p>
+                 
 
                 </div>
             </div>
