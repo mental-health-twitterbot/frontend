@@ -9,14 +9,25 @@ export default class TweetItem extends Component {
        
         return (
          <div className='tweetBox'>
+          
             <li className='tweets'> 
-                { tweetArray[0]} 
-                <a href="">
-                    #{tweetArray[1]}
-                </a>
-                <a href ="">
-                    { tweetArray[2] ? '#' + tweetArray[2] : ''}
-                </a>
+                <div id ='subTweetBox'>
+                    <div id="profilePic">
+                        <img 
+                            className='tweetProfile' 
+                            src='tweet_profile.png'
+                        />
+                    </div>
+                    <div id="tweetBody">
+                        { tweetArray[0]} 
+                        <a href="">
+                            #{tweetArray[1]}
+                        </a>
+                        <a href ="">
+                            { tweetArray[2] ? '#' + tweetArray[2] : ''}
+                        </a>
+                    </div>
+                </div>
             </li>
             <img className='linkBar' src="tweetbar.png"/>
          </div>

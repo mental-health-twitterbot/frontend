@@ -3,6 +3,14 @@
   font-size: 1.11em;
 }
 
+#subTweetBox{
+  display: flex;
+}
+
+#tweetBody{
+  margin-left: 1em;
+}
+
 .tweetBox{
   margin-left: 8em;
   margin-top: 1em;
@@ -23,4 +31,10 @@
 a{
   color: rgb(40, 172, 233);
   margin-left: .2em;
+}
+
+.tweetProfile{
+  width: 3.3em;
+  display: float;
+  justify-content: left;
 }
