@@ -2,9 +2,16 @@ import React, { Component } from 'react'
 import TweetItem  from './TweetItem';
 import faketweets  from '../data';
 import './TweetList.css';
+import getData from '..services/backendData.js';
 
-export default class TweetList extends Component {   
+export default class TweetList extends Component {  
+
     state = { data: [] }
+
+     async componentDidMount() {
+         const data = await getData()
+     }
+
     render() {
     // const tweets = faketweets
      
