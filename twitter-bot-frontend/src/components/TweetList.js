@@ -13,7 +13,9 @@ export default class TweetList extends Component {
         e.preventDefault();
         //spread the current approved tweets and then add the current fetched tweet
         const data = await getData()
-        this.setState({ approvedTweet: [...this.state.approvedTweet, data.body.tweet_text] })
+        this.setState({ 
+            approvedTweet: [...this.state.approvedTweet, data.body.tweet_text] 
+        })
         console.log(data.body);
         
     }
