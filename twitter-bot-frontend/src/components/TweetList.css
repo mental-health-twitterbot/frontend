@@ -1,11 +1,25 @@
-button{
-  position: relative;
-  left: 30%;
-  top: 200px;
+button.getTweet{
+  position: fixed;
+  left: 2%;
+  top: 60%;
+  height: 40px;
+  width: 110px;
+  font-size: 20px;
+  background-color: #1DA1F3;
+  color: white;
+  border-radius: 33%;
+}
+button.getTweet:hover{
+  cursor: pointer;
+  position: fixed;
+  left: 9%;
+  top: 60%;
   height: 50px;
   width: 90px;
   font-size: 20px;
-  background-color: #10d0ff;
+  background-color: rgb(26, 141, 212);
+  color: white;
+  border-radius: 33%;
 }
 p{
   color: white;
@@ -19,7 +33,7 @@ h3{
   position: relative;
   left: 20%;
 }
-.vertical {
+/* .vertical {
   border-left: 1px solid grey;
   height: 100%;
   position: absolute;
@@ -32,4 +46,4 @@ h3{
   position: absolute;
   left: 60%;
   margin-left: -3px;
-}
+} */

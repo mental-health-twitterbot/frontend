@@ -3,6 +3,7 @@
   margin-top: 1em;
   margin-bottom: .5em;
   justify-content: center;
-  max-width: 60%;
-  border: solid 1px white
+  max-width: 80%;
+  border: solid .5px grey;
+  padding: .75em;
 }
